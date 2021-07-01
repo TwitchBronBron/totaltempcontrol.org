@@ -1,0 +1,22 @@
+{
+  "name": "totaltempcontrol.org",
+  "version": "1.0.0",
+  "description": "The source code for ChristmanAppliances.com",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwitchBronBron/ChristmanAppliances.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TwitchBronBron/ChristmanAppliances.com/issues"
+  },
+  "homepage": "https://github.com/TwitchBronBron/ChristmanAppliances.com#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
