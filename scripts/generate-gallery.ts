@@ -17,7 +17,7 @@ const htmlChunks = [
     ...files.slice(0, 3).map((file, index) => {
         return `
             <a href="${file}" target="_blank">
-                <img src="${file}" alt="${file}" />
+                <img src="${file}" alt="${file}" loading="lazy"/>
             </a>
         `;
     }),
