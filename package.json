@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server --host=0.0.0.0",
-    "generate-gallery": "node scripts/generate-gallery.js"
+    "generate-gallery": "ts-node scripts/generate-gallery.ts"
   },
   "repository": {
     "type": "git",
