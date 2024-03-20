@@ -4,7 +4,8 @@
   "description": "The source code for ChristmanAppliances.com",
   "main": "index.js",
   "scripts": {
-    "serve": "live-server --host=0.0.0.0"
+    "serve": "live-server --host=0.0.0.0",
+    "generate-gallery": "node scripts/generate-gallery.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/TwitchBronBron/ChristmanAppliances.com#readme",
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "live-server": "^1.2.2",
+    "ts-node": "^10.9.2"
+  },
+  "dependencies": {
+    "fast-glob": "^3.3.2"
   }
 }

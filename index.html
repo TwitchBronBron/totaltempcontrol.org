@@ -9,9 +9,21 @@
     <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
     <!--used for contact info-->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="lib/photoswipe/photoswipe.css">
+    <style>
+        .pswp img {
+            max-width: none;
+            object-fit: contain;
+        }
+
+        .pswp__img--placeholder--blank {
+            display: none !important;
+        }
+    </style>
 </head>
 
 <body>
+
     <div class="body-container">
         <img class="full" src="images/logo.jpg" alt="Total Temp Controll LLC logo" />
 
@@ -20,12 +32,14 @@
                 <a class="phone" target="_blank" href="tel:717-681-7294">717-681-7294</a>
             </div>
             <div text-left class="info">
-                <a target="_blank" href="https://www.google.com/maps/place/Ephrata,+PA+17522/@40.1817134,-76.1958149,14z/data=!3m1!4b1!4m5!3m4!1s0x89c614275f23f5eb:0xf3469669826c97c2!8m2!3d40.1798165!4d-76.1788391">
+                <a target="_blank"
+                   href="https://www.google.com/maps/place/Ephrata,+PA+17522/@40.1817134,-76.1958149,14z/data=!3m1!4b1!4m5!3m4!1s0x89c614275f23f5eb:0xf3469669826c97c2!8m2!3d40.1798165!4d-76.1788391">
                     Ephrata, PA 17522
                 </a>
             </div>
             <div text-center class="info">
-                <a class="email" target="_blank" href="mailto:joe@TotalTempControlLLC.com">joe@TotalTempControlLLC.com</a>
+                <a class="email" target="_blank"
+                   href="mailto:joe@TotalTempControlLLC.com">joe@TotalTempControlLLC.com</a>
             </div>
         </div>
         <div class="navbar">
@@ -47,16 +61,38 @@
             <hr class="centerline" />
             <hr class="borderline" />
         </div>
-
+        <div id="Gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
+                <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" target="_blank">
+                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
+                </a>
+                <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" target="_blank">
+                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
+                </a>
+                <!-- wrapped with any element: -->
+                <div>
+                    <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+                       data-pswp-width="2500"
+                       data-pswp-height="1667"
+                       target="_blank">
+                        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr />
         <div id="hvac-installs" class="section">
             <h2>HVAC Installs</h2>
             <a href="images/hvac-installs.jpg" target="_blank" class="image">
                 <img class="full" src="images/hvac-installs.jpg" alt="An HVAC unit in a basement" />
             </a>
             <p>
-                If you have a new construction project, addition, or just want to replace that outdated system, we can help.
+                If you have a new construction project, addition, or just want to replace that outdated system, we can
+                help.
                 Brands include Airease, Concord, Heil, Fujitsu, just to name a few.
-                Gas furnaces, Heat Pumps, Mini Splits, A/C systems, Oil furnaces, Boilers, package units we can help! Ductwork modifications include Fiberglass and sheet metal.
+                Gas furnaces, Heat Pumps, Mini Splits, A/C systems, Oil furnaces, Boilers, package units we can help!
+                Ductwork modifications include Fiberglass and sheet metal.
             </p>
         </div>
 
@@ -69,7 +105,8 @@
             </a>
             <p>
                 I service what I sell, not to say I wouldn't service other units.
-                Preventive maintenance is based on a flat rate per equipment, filters, capacitors, refrigerant check, coil cleanings are a few examples.
+                Preventive maintenance is based on a flat rate per equipment, filters, capacitors, refrigerant check,
+                coil cleanings are a few examples.
             </p>
         </div>
 
@@ -81,23 +118,28 @@
                 <img class="full" src="images/profile.jpg" alt="Photo of Joe" />
             </a> -->
             <p>
-                I entered the HVAC trade in 1987, 35 years and worked with a few companies since then, the longest tenure the last 25 years.
+                I entered the HVAC trade in 1987, 35 years and worked with a few companies since then, the longest
+                tenure the last 25 years.
                 I started my own business in May 2021.
-                Business has been good with alot of word of mouth advertising. I pride myself in knowing at the end of a job I have done the best I have to offer.
+                Business has been good with alot of word of mouth advertising. I pride myself in knowing at the end of a
+                job I have done the best I have to offer.
             </p>
         </div>
         <hr />
         <div id="Financing" class="section">
             <h2>Financing Available</h2>
             <p>
-                We are pleased to offer 0% financing to our customers through <a href="https://www.aprsupply.com">APR Supply Co</a>. Feel free to contact us for more information.
+                We are pleased to offer 0% financing to our customers through <a href="https://www.aprsupply.com">APR
+                    Supply Co</a>. Feel free to contact us for more information.
             </p>
         </div>
         <hr />
+
         <div id="contact" class="section">
             <h2>Contact Us</h2>
             <p text-center>
-                If you'd like to get a quote for a new project, schedule a service call, or simply have a question, we would
+                If you'd like to get a quote for a new project, schedule a service call, or simply have a question, we
+                would
                 love to hear from you!
             </p>
             <div class="flex">
@@ -110,12 +152,14 @@
                             <br />
                             <br />
                             <b>Email</b><br />
-                            <a nobold class="email" target="_blank" href="mailto:joe@TotalTempControlLLC.com">joe@TotalTempControlLLC.com</a>
+                            <a nobold class="email" target="_blank"
+                               href="mailto:joe@TotalTempControlLLC.com">joe@TotalTempControlLLC.com</a>
                             <br />
                             <br />
                             <b>Location</b>
                             <div text-left class="info">
-                                <a target="_blank" href="https://www.google.com/maps/place/Ephrata,+PA+17522/@40.1817134,-76.1958149,14z/data=!3m1!4b1!4m5!3m4!1s0x89c614275f23f5eb:0xf3469669826c97c2!8m2!3d40.1798165!4d-76.1788391">
+                                <a target="_blank"
+                                   href="https://www.google.com/maps/place/Ephrata,+PA+17522/@40.1817134,-76.1958149,14z/data=!3m1!4b1!4m5!3m4!1s0x89c614275f23f5eb:0xf3469669826c97c2!8m2!3d40.1798165!4d-76.1788391">
                                     Ephrata, PA 17522
                                 </a>
                             </div>
@@ -159,6 +203,21 @@
         //for pages that support javascript, update the copyright year to the current year
         document.getElementById('copyrightYear').innerHTML = new Date().getFullYear();
     </script>
+
+    <script src="lib/photoswipe/photoswipe.umd.min.js"></script>
+    <script src="lib/photoswipe/photoswipe-lightbox.umd.min.js"></script>
+
+    <script type="text/javascript">
+        var lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery--getting-started',
+            children: 'a',
+            // set background opacity
+            bgOpacity: .95,
+            pswpModule: PhotoSwipe
+        });
+        lightbox.init();
+    </script>
+
 </body>
 
 </html>
