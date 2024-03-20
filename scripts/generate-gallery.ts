@@ -8,17 +8,32 @@ process.chdir(__dirname + '/..');
 let indexHtml = fs.readFileSync('index.html').toString();
 
 const startIndex = indexHtml.indexOf(galleryStart) + galleryStart.length;
-const endIndex = indexHtml.indexOf(galleryEnd) + galleryEnd.length;
+const endIndex = indexHtml.indexOf(galleryEnd);
 
-const files = fastGlob.sync('images/gallery/**/*.*');
+const files = fastGlob.sync('images/gallery/**/*.*').sort();
 
-const imageHtml = files.map((file) => {
-    return `
-        <a href="${file}" target="_blank">
-            <img src="${file}" alt="${file}" />
+const htmlChunks = [
+    indexHtml.substring(0, startIndex),
+    ...files.slice(0, 3).map((file, index) => {
+        return `
+            <a href="${file}" target="_blank">
+                <img src="${file}" alt="${file}" />
+            </a>
+        `;
+    }),
+    `
+        <a href="${files[3]}" class="view-all" target="_blank">
+            View all ${files.length} images
         </a>
-    `;
-});
+    `,
+    '<div class="hidden">',
+    ...files.slice(4).map((file) => {
+        return `
+            <a href="${file}" target="_blank"></a>
+        `;
+    }),
+    '</div>',
+    indexHtml.substring(endIndex)
+];
 
-indexHtml = indexHtml.substring(0, startIndex) + '\n' + imageHtml.join('') + '\n' + indexHtml.substring(endIndex);
-fs.writeFileSync('index.html', indexHtml);
+fs.writeFileSync('index.html', htmlChunks.join('\n'));

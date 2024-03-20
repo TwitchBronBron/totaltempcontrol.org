@@ -16,8 +16,46 @@
             object-fit: contain;
         }
 
-        .pswp__img--placeholder--blank {
+        /* hide that pesky temporary image that pops up for 3 seconds after the first image is clicked */
+        .pswp__img:nth-of-type(1):not(:last-of-type) {
+            display: none;
+        }
+
+        .pwsp__img--placeholder .pswp__img--placeholder--blank {
             display: none !important;
+            width: 0 !important;
+            height: 0 !important;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery img,
+        .view-all {
+            max-height: 100px;
+            border-radius: 5px;
+        }
+
+        .gallery a {
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .gallery a img {
+            display: block;
+        }
+
+        .view-all {
+            height: 80px;
+            padding: 10px;
+            background-color: rgb(219, 219, 219);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
         }
     </style>
 </head>
@@ -61,29 +99,6 @@
             <hr class="centerline" />
             <hr class="borderline" />
         </div>
-        <div id="Gallery" class="section">
-            <h2>Gallery</h2>
-            <div class="pswp-gallery pswp-gallery--single-column" id="gallery--getting-started">
-                <!--gallery-start-->
-                <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg" target="_blank">
-                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg" alt="" />
-                </a>
-                <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-2500.jpg" target="_blank">
-                    <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/7/img-200.jpg" alt="" />
-                </a>
-                <!-- wrapped with any element: -->
-                <div>
-                    <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
-                       data-pswp-width="2500"
-                       data-pswp-height="1667"
-                       target="_blank">
-                        <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
-                    </a>
-                </div>
-                <!--gallery-end-->
-            </div>
-        </div>
-        <hr />
         <div id="hvac-installs" class="section">
             <h2>HVAC Installs</h2>
             <a href="images/hvac-installs.jpg" target="_blank" class="image">
@@ -128,6 +143,7 @@
             </p>
         </div>
         <hr />
+
         <div id="Financing" class="section">
             <h2>Financing Available</h2>
             <p>
@@ -136,7 +152,312 @@
             </p>
         </div>
         <hr />
+        <div id="gallery" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery pswp-gallery--single-column">
+                <!--gallery-start-->
 
+                <a href="images/gallery/1712.jpeg" target="_blank">
+                    <img src="images/gallery/1712.jpeg" alt="images/gallery/1712.jpeg" />
+                </a>
+
+
+                <a href="images/gallery/1713.jpeg" target="_blank">
+                    <img src="images/gallery/1713.jpeg" alt="images/gallery/1713.jpeg" />
+                </a>
+
+
+                <a href="images/gallery/1714.jpeg" target="_blank">
+                    <img src="images/gallery/1714.jpeg" alt="images/gallery/1714.jpeg" />
+                </a>
+
+
+                <a href="images/gallery/1715.jpeg" class="view-all" target="_blank">
+                    View all 96 images
+                </a>
+
+                <div class="hidden">
+
+                    <a href="images/gallery/1796.jpeg" target="_blank"></a>
+
+
+                    <a href="images/gallery/1797.jpeg" target="_blank"></a>
+
+
+                    <a href="images/gallery/1798.jpeg" target="_blank"></a>
+
+
+                    <a href="images/gallery/1816.jpeg" target="_blank"></a>
+
+
+                    <a href="images/gallery/1819.jpeg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210603_134823.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210603_145708.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210617_094926.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210706_180331.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210707_115612.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210707_120445.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210713_154733.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20210815_112418.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220106_143010.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220106_143133.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220106_143221.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220301_164444.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220303_133721.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220303_141039.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220324_145029.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220331_123024.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220331_125535.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220414_134857.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220503_145118.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220505_160256.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220506_151637.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220512_155920.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220516_152445.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220516_155846.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220518_165515.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220518_165741.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220616_153146.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220630_123054.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220630_123242.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220630_123254.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220718_131119.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220718_131127.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220718_131147.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220718_131216.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220718_131235.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220720_195958.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220720_200021.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220720_200030.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220720_200209.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220720_200223.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220720_200459.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220720_200509.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220726_172110.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220728_163607.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220803_144424.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220803_144432.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220803_144446.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220803_144720.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220805_172222.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220805_173143.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220823_123727.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220921_155407.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220926_172255.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220926_172353.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20220926_172408.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20221006_162205.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20221012_141602.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20221012_141617.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20221012_142904.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230118_123422.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230118_123635.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230210_151654.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230210_152348.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230223_174310.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230515_172706.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230515_172725.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230515_172811.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230515_172819.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230524_080059.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230531_101424.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230809_104628.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230809_105724.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230823_091211.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230830_152453.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20230906_151457.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231012_081345.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231017_112740.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231023_183608.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231026_150126.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231027_114703.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231201_115221.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231219_174010.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20231228_160213.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/20240104_105007.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/PXL_20210430_203044113.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/PXL_20210430_204538970.jpg" target="_blank"></a>
+
+
+                    <a href="images/gallery/Screenshot_20230110_084937_Message+.jpg" target="_blank"></a>
+
+                </div>
+                <!--gallery-end-->
+            </div>
+        </div>
+        <hr />
         <div id="contact" class="section">
             <h2>Contact Us</h2>
             <p text-center>
@@ -211,10 +532,10 @@
 
     <script type="text/javascript">
         var lightbox = new PhotoSwipeLightbox({
-            gallery: '#gallery--getting-started',
+            gallery: '.gallery',
             children: 'a',
             // set background opacity
-            bgOpacity: .95,
+            bgOpacity: 1,
             pswpModule: PhotoSwipe
         });
         lightbox.init();
